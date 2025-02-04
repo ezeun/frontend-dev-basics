@@ -4,18 +4,17 @@ o1.name = '둘리';
 o1.age = 10;
 o1.another = new Object();
 o1.another.name = '마이콜';
-o1.another,age = 20;
+o1.another.age = 20;
 console.log(o1);
 
 console.log("============[03] 생성방법2: {}")
-var o2 = new Object();
+var o2 = {};
 o2.name = '둘리';
 o2.age = 10;
 o2.another = new Object();
 o2.another.name = '마이콜';
-o2.another,age = 20;
+o2.another.age = 20;
 console.log(o2);
-
 
 console.log("============[04] 생성방법3: JSON");
 var o3 = {
@@ -28,7 +27,6 @@ var o3 = {
 }
 console.log(o3);
 
-
 console.log("============[참고] JSON 포맷 데이터 통신(AJAX): XmlHttpRequest 객체를 사용");
-
-console.log(4 + '4');
+var response = "{name:'둘리', age: 10, email:'dooly@google.com'}";
+var userVo = eval("{name:'둘리', age:10, email:'dooly@google.com'}")
